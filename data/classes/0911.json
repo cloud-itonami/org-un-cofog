@@ -2,6 +2,7 @@
   "code": "0911",
   "nameEn": "Pre-primary education",
   "group": "091",
+  "serviceType": "is",
   "description": "Provision of pre-primary education at ISCED level 0 (early childhood education designed to support children's early cognitive, physical, social and emotional development). Administration, inspection or support of educational institutions providing pre-primary education.",
   "includes": [
     "provision of pre-primary education (ISCED-2011 level 0)",
@@ -13,5 +14,8 @@
     "subsidiary services to education, see 0960",
     "child care outside an educational programme is part of social protection (1040)"
   ],
+  "sourceCode": "09.1.1",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

@@ -2,6 +2,7 @@
   "code": "0610",
   "nameEn": "Housing development",
   "group": "061",
+  "serviceType": "cs",
   "description": "Administration of housing development affairs and services. Promotion, monitoring and evaluation of housing development activities, including planning of new communities, redevelopment of existing communities, development of standards for housing.",
   "includes": [
     "administration of housing development affairs and services",
@@ -15,5 +16,8 @@
     "water supply, see 0630",
     "street lighting, see 0640"
   ],
+  "sourceCode": "06.1.0",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

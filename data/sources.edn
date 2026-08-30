@@ -1,0 +1,50 @@
+;; SPDX-License-Identifier: Apache-2.0
+;; Provenance for the COFOG data in this repository.
+;;
+;; Every URL in this file was fetched and returned HTTP 200; the response body
+;; is committed under :path and pinned by :sha256. Nothing is listed here that
+;; could not be retrieved — an unfetchable URL is not a citation.
+;;
+;; Re-check offline:  nbb scripts/cofog-provenance.cljs verify
+;; Re-check upstream: nbb scripts/cofog-provenance.cljs verify --fetch
+;;
+;; :bytes and :sha256 are of the committed copy, which is the response body with
+;; CRLF newlines normalised to LF. That is the only edit made to it.
+
+{:classification "COFOG"
+ :custodian      "United Nations Statistics Division"
+ :data-license   "public-domain"
+
+ ;; What this repository asserts about the shape of COFOG. Each number is
+ ;; checked against the pinned structure file by scripts/cofog-provenance.cljs;
+ ;; they are not free-standing claims.
+ :declared {:division 10 :group 69 :class 109}
+
+ :sources
+ [{:role        :structure
+   :url         "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt"
+   :path        "data/upstream/cofog-1999-structure-en.txt"
+   :language    "en"
+   :status      200
+   :bytes       7970
+   :sha256      "65209c27cc4149fa4a9cd14b304e6c2bf6cbcd965507bd194233b2d3a67db957"
+   :retrieved-at "2026-08-30T01:18:56Z"
+   :note        "Authoritative level structure: 10 divisions, 69 groups, 109 classes, each class marked (CS) collective or (IS) individual services."}
+
+  {:role        :structure-translation
+   :url         "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_French_structure.txt"
+   :path        "data/upstream/cofog-1999-structure-fr.txt"
+   :language    "fr"
+   :status      200
+   :bytes       9548
+   :sha256      "645e03836582af35a9d12674334fb581acc8405d7ff97880725c7e6724ccbdff"
+   :retrieved-at "2026-08-30T01:18:56Z"
+   :note        "Independent confirmation of the level counts: the French edition yields the same 10/69/109."}]
+
+ ;; What is therefore still UNSOURCED in this repository. The class-level
+ ;; "description"/"includes"/"excludes" prose in data/classes/*.json does not
+ ;; come from any file above. No machine-readable UN explanatory-note file was
+ ;; found (the probes are recorded in README.md, "Provenance"), so that prose
+ ;; is unverified — which is not
+ ;; the same as wrong, and not the same as sourced.
+ :unsourced [:class/description :class/includes :class/excludes]}

@@ -2,6 +2,7 @@
   "code": "0310",
   "nameEn": "Police services",
   "group": "031",
+  "serviceType": "cs",
   "description": "Administration of police affairs and services, including alien registration, issuing work and travel documents to immigrants, maintenance of arrest records and statistics related to police work; regulation and control of road traffic; prevention of smuggling and control of off-shore and ocean fishing; operation of regular and auxiliary police forces.",
   "includes": [
     "administration of police affairs and services",
@@ -17,5 +18,8 @@
     "law courts, see 0330",
     "prisons, see 0340"
   ],
+  "sourceCode": "03.1.0",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

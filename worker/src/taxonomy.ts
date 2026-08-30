@@ -21,9 +21,16 @@ export interface CofogClass {
   code: string;
   nameEn: string;
   group: string;
+  /** "cs" collective services / "is" individual services, as marked by the UN. */
+  serviceType?: "cs" | "is";
   description?: string;
   includes?: string[];
   excludes?: string[];
+  /** The UN's own dotted code for this class, e.g. "01.1.1" for 0111. */
+  sourceCode?: string;
+  /** Where nameEn/serviceType/sourceCode were retrieved from. */
+  source?: string;
+  retrievedAt?: string;
   implementedAt?: string;
 }
 

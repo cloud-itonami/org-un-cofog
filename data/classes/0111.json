@@ -1,22 +1,25 @@
 {
   "code": "0111",
-  "nameEn": "Executive and legislative organs, financial and fiscal affairs, external affairs",
+  "nameEn": "Executive and legislative organs",
   "group": "011",
-  "description": "Administration, operation or support of executive and legislative organs; financial, fiscal and external affairs. Includes office of the chief executive at all levels of government; legislative bodies at all levels of government; advisory, administrative and political staffs attached to chief executives and legislatures; libraries and other reference services serving these bodies.",
+  "serviceType": "cs",
+  "description": "Administration, operation or support of executive and legislative organs. Includes office of the chief executive at all levels of government; legislative bodies at all levels of government; advisory, administrative and political staffs attached to chief executives and legislatures; libraries and other reference services serving these bodies.",
   "includes": [
     "office of the chief executive (head of state, governor, mayor, etc.) at all levels of government",
     "legislative bodies (parliament, assemblies, councils) at all levels of government",
     "advisory, administrative and political staffs attached to executives and legislatures",
-    "permanent and temporary committees and commissions established by or acting on behalf of the executive or legislature",
-    "ministries of finance and revenue authorities (tax administration, customs)",
-    "ministries of foreign affairs and diplomatic missions, embassies and consulates abroad",
-    "information and cultural services intended for distribution beyond national boundaries"
+    "permanent and temporary committees and commissions established by or acting on behalf of the executive or legislature"
   ],
   "excludes": [
+    "financial and fiscal affairs — ministries of finance, revenue authorities, tax administration and customs, see 0112",
+    "external affairs — ministries of foreign affairs, diplomatic missions, embassies and consulates abroad, and information and cultural services intended for distribution beyond national boundaries, see 0113",
     "ministries handling specific functional areas (classified to the corresponding function)",
     "foreign economic aid, see 0121 / 0122",
     "general personnel services, see 0131",
     "foreign military aid, see 0230"
   ],
+  "sourceCode": "01.1.1",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

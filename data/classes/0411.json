@@ -2,6 +2,7 @@
   "code": "0411",
   "nameEn": "General economic and commercial affairs",
   "group": "041",
+  "serviceType": "cs",
   "description": "Administration of general economic and commercial affairs and services, including formulation and implementation of general economic and commercial policies; liaison with manufacturers, trade associations and other organizations interested in such matters; regulation or support of general economic and commercial activities such as export and import trade as a whole.",
   "includes": [
     "administration of general economic and commercial affairs and services",
@@ -15,5 +16,8 @@
     "agriculture, see 0421",
     "fuel and energy, see 043x"
   ],
+  "sourceCode": "04.1.1",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }
