@@ -1,0 +1,189 @@
+Code          Description
+01            Services g�n�raux des administrations publiques
+01.1          Fonctionnement des organes ex�cutifs et l�gislatifs, affaires financi�res et fiscales, affaires �trang�res
+01.1.1        Fonctionnement des organes ex�cutifs et l�gislatifs (SC)
+01.1.2        Affaires financi�res et fiscales (SC)
+01.1.3        Affaires �trang�res (SC)
+01.2          Aide �conomique ext�rieure
+01.2.1        Aide �conomique aux pays en d�veloppement ou en transition (SC)
+01.2.2        Aide �conomique par l'interm�diaire d'organisations internationales (SC)
+01.3          Services g�n�raux
+01.3.1        Services g�n�raux de personnel (SC)
+01.3.2        Services g�n�raux de planification et de statistiques (SC)
+01.3.3        Autres services g�n�raux (SC)
+01.4          Recherche fondamentale
+01.4.0        Recherche fondamentale (SC)
+01.5          R-D concernant des services g�n�raux des administrations publiques (SC)
+01.5.0        R-D concernant les services g�n�raux des administrations publiques (SC)
+01.6          Services g�n�raux des administrations publiques n.c.a.
+01.6.0        Services g�n�raux des administrations publiques n.c.a. (SC)
+01.7          Op�rations concernant la dette publique
+01.7.0        Op�rations concernant la dette publique (SC)
+01.8          Transferts de caract�re g�n�ral entre administrations publiques
+01.8.0        Transferts de caract�re g�n�ral entre administrations publiques (SC)
+02            D�fense
+02.1          D�fense militaire
+02.1.0        D�fense militaire (SC)
+02.2          D�fense civile
+02.2.0        D�fense civile (SC)
+02.3          Aide militaire � des pays �trangers
+02.3.0        Aide militaire � des pays �trangers (SC)
+02.4          R-D concernant la d�fense
+02.4.0        R-D concernant la d�fense (SC)
+02.5          D�fense n.c.a.
+02.5.0        D�fense n.c.a. (SC)
+03            Ordre et s�curit� publics
+03.1          Services de police
+03.1.0        Services de police (SC)
+03.2          Services de protection civile
+03.2.0        Services de protection civile (SC)
+03.3          Tribunaux
+03.3.0        Tribunaux (SC)
+03.4          Administration p�nitentiaire
+03.4.0        Administration p�nitentiaire (SC)
+03.5          R-D concernant l'ordre et la s�curit� publics (SC)
+03.5.0        R-D concernant l'ordre et la s�curit� publics (SC)
+03.6          Ordre et s�curit� publics n.c.a.
+03.6.0        Ordre et s�curit� publics n.c.a. (SC)
+04            Affaires �conomiques
+04.1          Tutelle de l'�conomie g�n�rale, des �changes et de l'emploi
+04.1.1        Tutelle de l'�conomie g�n�rale et des �changes (SC)
+04.1.2        Affaires g�n�rales concernant l'emploi (SC)
+04.2          Agriculture, sylviculture, p�che et chasse
+04.2.1        Agriculture (SC)
+04.2.2        Sylviculture (SC)
+04.2.3        P�che et chasse (SC)
+04.3          Combustibles et �nergie
+04.3.1        Charbon et autres combustibles min�raux solides (SC)
+04.3.2        P�trole et gaz naturel (SC)
+04.3.3        Combustible nucl�aire (SC)
+04.3.4        Autres combustibles (SC)
+04.3.5        �lectricit� (SC)
+04.3.6        �nergie non �lectrique (SC)
+04.4          Industries extractives et manufacturi�res, construction
+04.4.1        Extraction de ressources min�rales autres que les combustibles min�raux (SC)
+04.4.2        Industries manufacturi�res (SC)
+04.4.3        Construction (SC)
+04.5          Transports
+04.5.1        Transports routiers (SC)
+04.5.2        Transports par voie d'eau (SC)
+04.5.3        Transports par voie ferr�e (SC)
+04.5.4        Transports a�riens (SC)
+04.5.5        Pipelines et syst�mes de transport divers (SC)
+04.6          Communications
+04.6.0        Communications (SC)
+04.7          Autres branches d'activit�
+04.7.1        Distribution, entrep�ts et magasins (SC)
+04.7.2        H�tellerie et restauration (SC)
+04.7.3        Tourisme (SC)
+04.7.4        Projets de d�veloppement polyvalents (SC)
+04.8          R-D concernant les affaires �conomiques
+04.8.1        R-D concernant la tutelle de l'�conomie g�n�rale, des �changes et de l'emploi (SC)
+04.8.2        R-D concernant l'agriculture, la sylviculture, la p�che et la chasse (SC)
+04.8.3        R-D concernant les combustibles et l'�nergie (SC)
+04.8.4        R-D concernant les industries extractives et manufacturi�res et la construction (SC)
+04.8.5        R-D concernant les transports (SC)
+04.8.6        R-D concernant les communications (SC)
+04.8.7        R-D concernant d'autres branches d'activit� (SC)
+04.9          Affaires �conomiques n.c.a.
+04.9.0        Affaires �conomiques n.c.a. (SC)
+05            Protection de l'environnement
+05.1          Gestion des d�chets
+05.1.0        Gestion des d�chets (SC)
+05.2          Gestion des eaux us�es
+05.2.0        Gestion des eaux us�es (SC)
+05.3          Lutte contre la pollution
+05.3.0        Lutte contre la pollution (SC)
+05.4          Pr�servation de la diversit� biologique et protection de la nature
+05.4.0        Pr�servation de la diversit� biologique et protection de la nature (SC)
+05.5          R-D dans le domaine de la protection de l'environnement
+05.5.0        R-D dans le domaine de la protection de l'environnement
+05.6          Protection de l'environnement n.c.a.
+05.6.0        Protection de l'environnement n.c.a. (SC)
+06            Logements et �quipements collectifs
+06.1          Logements
+06.1.0        Logements (SC)
+06.2          �quipements collectifs
+06.2.0        �quipements collectifs (SC)
+06.3          Alimentation en eau
+06.3.0        Alimentation en eau (SC)
+06.4          �clairage public
+06.4.0        �clairage public (SC)
+06.5          R-D dans le domaine du logement et des �quipements collectifs
+06.5.0        R-D dans le domaine du logement et des �quipements collectifs (SC)
+06.6          Logement et �quipements collectifs n.c.a.
+06.6.0        Logement et �quipements collectifs n.c.a. (SC)
+07            Sant�
+07.1          Produits, appareils et mat�riels m�dicaux
+07.1.1        Produits pharmaceutiques (SI)
+07.1.2        Produits m�dicaux divers (SI)
+07.1.3        Appareils et mat�riel th�rapeutiques (SI)
+07.2          Services ambulatoires
+07.2.1        Services de m�decine g�n�rale (SI)
+07.2.2        Services de m�decine sp�cialis�e (SI)
+07.2.3        Services dentaires (SI)
+07.2.4        Services param�dicaux (SI)
+07.3          Services hospitaliers
+07.3.1        Services hospitaliers g�n�raux (SI)
+07.3.2        Services hospitaliers sp�cialis�s (SI)
+07.3.3        Services des dispensaires et des maternit�s (SI)
+07.3.4        Services des maisons de repos et des maisons de sant� (SI)
+07.4          Services de sant� publique
+07.4.0        Services de sant� publique (SI)
+07.5          R-D dans le domaine de la sant�
+07.5.0        R-D dans le domaine de la sant� (SC)
+07.6          Sant� n.c.a.
+07.6.0        Sant� n.c.a.
+08            Loisirs, culture et culte
+08.1          Services r�cr�atifs et sportifs
+08.1.0        Services r�cr�atifs et sportifs (SI)
+08.2          Services culturels
+08.2.0        Services culturels (SI)
+08.3          Services de radiodiffusion, de t�l�vision et d'�dition
+08.3.0        Services de radiodiffusion, de t�l�vision et d'�dition (SC)
+08.4          Culte et autres services communautaires
+08.4.0        Culte et autres services communautaires (SC)
+08.5          R-D dans le domaine des loisirs, de la culture et du culte
+08.5.0        R-D dans le domaine des loisirs, de la culture et du culte (SC)
+08.6          Loisirs, culture et culte n.c.a.
+08.6.0        Loisirs, culture et culte n.c.a. (SC)
+09            Enseignement
+09.1          Enseignement pr��l�mentaire et primaire
+09.1.1        Enseignement pr��l�mentaire (SI)
+09.1.2        Enseignement primaire (SI)
+09.2          Enseignement secondaire
+09.2.1        Premier cycle de l'enseignement secondaire (SI)
+09.2.2        Deuxi�me cycle de l'enseignement secondaire (SI)
+09.3          Enseignement postsecondaire non sup�rieur
+09.3.0        Enseignement postsecondaire non sup�rieur (SI)
+09.4          Enseignement sup�rieur
+09.4.1        Enseignement sup�rieur non doctoral (SI)
+09.4.2        Enseignement sup�rieur doctoral (SI)
+09.5          Enseignement non d�fini par niveau
+09.5.0        Enseignement non d�fini par niveau (SI)
+09.6          Services annexes � l'enseignement
+09.6.0        Services annexes � l'enseignement (SI)
+09.7          R-D dans le domaine de l'enseignement
+09.7.0        R-D dans le domaine de l'enseignement (SC)
+09.8          Enseignement n.c.a.
+09.8.0        Enseignement n.c.a. (SC)
+10            Protection sociale
+10.1          Maladie et invalidit�
+10.1.1        Maladie (SI)
+10.1.2        Invalidit� (SI)
+10.2          Vieillesse
+10.2.0        Vieillesse (SI)
+10.3          Survivants
+10.3.0        Survivants (SI)
+10.4          Famille et enfants
+10.4.0        Famille et enfants (SI)
+10.5          Ch�mage
+10.5.0        Ch�mage (SI)
+10.6          Logement
+10.6.0        Logement (SI)
+10.7          Exclusion sociale n.c.a.
+10.7.0        Exclusion sociale n.c.a. (SI)
+10.8          R-D dans le domaine de la protection sociale
+10.8.0        R-D dans le domaine de la protection sociale (SC)
+10.9          Protection sociale n.c.a.
+10.9.0        Protection sociale n.c.a. (SC)

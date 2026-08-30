@@ -103,7 +103,14 @@ function getClass(params: URLSearchParams): Response {
     description: c.description,
     includes: c.includes ?? [],
     excludes: c.excludes ?? [],
+    serviceType: c.serviceType,
     cofogVersion: "1999 (rev. 2014)",
+    // Provenance travels with the record: nameEn, serviceType and sourceCode
+    // are checkable against this URL. description/includes/excludes are NOT —
+    // see data/sources.edn :unsourced.
+    sourceCode: c.sourceCode,
+    source: c.source,
+    retrievedAt: c.retrievedAt,
     implementedAt: c.implementedAt,
   });
 }

@@ -2,6 +2,7 @@
   "code": "0711",
   "nameEn": "Pharmaceutical products",
   "group": "071",
+  "serviceType": "is",
   "description": "Provision of pharmaceutical products such as medicinal preparations, medicinal drugs, patent medicines, serums, vaccines, vitamins and minerals, cod-liver and halibut-liver oils, oral contraceptives. Includes provision of these products to outpatients only; pharmaceutical products provided to inpatients are classified under hospital services.",
   "includes": [
     "provision of medicinal preparations, medicinal drugs, patent medicines, serums and vaccines, vitamins and minerals, cod-liver and halibut-liver oils, oral contraceptives, etc.",
@@ -12,5 +13,8 @@
     "therapeutic appliances and equipment, see 0713",
     "pharmaceutical products provided to inpatients (classified under hospital services 073x)"
   ],
+  "sourceCode": "07.1.1",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

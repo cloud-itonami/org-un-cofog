@@ -2,6 +2,7 @@
   "code": "0210",
   "nameEn": "Military defence",
   "group": "021",
+  "serviceType": "cs",
   "description": "Administration of military defence affairs and services. Operation of land, sea, air and space defence forces; engineering, transport, communications, intelligence, personnel and other non-combat forces; reserve and auxiliary forces of the defence establishment.",
   "includes": [
     "administration of military defence affairs and services",
@@ -15,5 +16,8 @@
     "veterans' benefits, see 1002 / 1010 (handled under social protection)",
     "war pensions, see 1010"
   ],
+  "sourceCode": "02.1.0",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

@@ -2,6 +2,7 @@
   "code": "0510",
   "nameEn": "Waste management",
   "group": "051",
+  "serviceType": "cs",
   "description": "Collection, treatment and disposal of waste. Includes street cleaning and the collection, treatment and disposal of all waste, whether by physical, biological or thermal processes; operation and supervision of recycling facilities; transport of waste.",
   "includes": [
     "collection, treatment and disposal of waste",
@@ -15,5 +16,8 @@
     "pollution abatement, see 0530",
     "remediation activities of contaminated land, see 0530"
   ],
+  "sourceCode": "05.1.0",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

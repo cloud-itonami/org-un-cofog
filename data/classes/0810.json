@@ -2,6 +2,7 @@
   "code": "0810",
   "nameEn": "Recreational and sporting services",
   "group": "081",
+  "serviceType": "is",
   "description": "Provision of recreational and sporting services. Operation of or support to facilities for active sporting pursuits or events (playing fields, tennis courts, squash courts, athletic tracks, golf courses, boxing rings, skating rinks, gymnasiums, etc.); operation of or support to facilities for passive recreation (parks, beaches, camping areas and associated non-commercial accommodation, swimming pools); regulation and operation of public broadcasting and publishing of materials for recreational purposes.",
   "includes": [
     "operation or support of facilities for active sporting pursuits or events (playing fields, tennis courts, squash courts, athletic tracks, golf courses, boxing rings, skating rinks, gymnasiums)",
@@ -13,5 +14,8 @@
     "broadcasting and publishing services, see 0830",
     "religious and other community services, see 0840"
   ],
+  "sourceCode": "08.1.0",
+  "source": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/COFOG_english_structure.txt",
+  "retrievedAt": "2026-08-30T01:21:02Z",
   "implementedAt": "2026-04-20T00:00:00Z"
 }

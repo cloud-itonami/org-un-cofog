@@ -6,7 +6,7 @@
 // As each new class JSON is added under data/classes/, append one import
 // line + one CLASSES entry here, then bump IMPLEMENTED_COUNT.
 //
-// Progress: 10 / 96 COFOG classes implemented (one per division as seed).
+// Progress: 10 / 109 COFOG classes implemented (one per division as seed).
 // Cron `*/10 * * * *` (loop session) fills the rest one-by-one.
 
 import c0111 from "../../data/classes/0111.json";
@@ -36,4 +36,5 @@ export const CLASSES: Record<string, CofogClass> = {
 };
 
 export const IMPLEMENTED_COUNT = Object.keys(CLASSES).length;
-export const TOTAL_CLASSES = 96; // etzhayyim-project-cofog actor count
+export const TOTAL_CLASSES = 109; // UN COFOG 1999 class count, checked against
+// data/upstream/cofog-1999-structure-en.txt by scripts/cofog-provenance.cljs.
