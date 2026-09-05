@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "etzhayyim-open-cofog",
-  "main": "svelte/.svelte-kit/cloudflare/_worker.js",
+  "main": "./src/app.ts",
   "compatibility_date": "2026-04-20",
   "compatibility_flags": [
     "nodejs_compat"
@@ -24,7 +24,7 @@
     "enabled": true
   },
   "assets": {
-    "directory": "./svelte/.svelte-kit/cloudflare/client",
+    "directory": "../web/dist",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
