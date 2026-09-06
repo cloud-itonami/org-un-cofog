@@ -1,4 +1,72 @@
 {
+  // NOTE ON THIS FILE'S HISTORY, read before changing `main`/`assets` again:
+  //
+  // From this repo's extraction (`fc1c239`, 2026-07-20) through commit
+  // `1985938`/`34166ac` (2026-09-05), `main` pointed at a SvelteKit build
+  // output (`svelte/.svelte-kit/cloudflare/_worker.js`) that
+  // `@sveltejs/adapter-cloudflare` compiled from `worker/svelte/` — a
+  // status page (`+page.svelte`) plus a generic XRPC-to-MCP-router POST
+  // proxy (`src/routes/xrpc/[...path]/+server.ts`). `assets.directory`
+  // pointed at that build's static client output
+  // (`./svelte/.svelte-kit/cloudflare/client`). `worker/src/app.ts` (with
+  // `defence-handlers.ts`/`taxonomy.ts`/`classes-index.ts`) already
+  // existed the whole time, already implemented this repo's actual
+  // product — four XRPC GET routes under
+  // `com.etzhayyim.apps.openCofog.*` (list/get COFOG divisions, groups,
+  // classes) — and was already documented in the README as "the XRPC
+  // router", but was NOT wired to `main`, so it was never actually served
+  // by this Worker.
+  //
+  // Commit `34166ac` ("migrate open-cofog worker UI from svelte to cljs")
+  // repointed `main` to `./src/app.ts` — for the first time actually
+  // deploying this repo's real product — but did three things badly at
+  // the same time: it deleted `worker/svelte/` (including `+server.ts`)
+  // without preserving it anywhere; it did not build a `worker/cljs/`
+  // replacement following this workspace's shadow-cljs+reagent+re-frame+
+  // jp-go-dds convention (ADR-2608260900) at all; and it repointed
+  // `assets.directory` at `../web/dist`, the output of an unrelated,
+  // separately-scaffolded root-level app
+  // (`src/cloud_itonami/open_cofog/{desktop,state,ui}.cljs`, built with
+  // kotoba-ui/appkit, not jp-go-dds) that duplicates this same status
+  // page outside `worker/`. It also left `APP_FRAMEWORK` stale
+  // (`"sveltekit-edge-bff"`) even though SvelteKit was gone.
+  //
+  // THIS migration (frontend-only, scoped to `worker/svelte` →
+  // `worker/cljs`) fixes the parts of that in its scope:
+  //   - `assets.directory` → `./cljs/public` (this repo's own
+  //     shadow-cljs+reagent+re-frame+jp-go-dds build, see `cljs/`).
+  //   - `APP_FRAMEWORK` → `"cljs-reagent-re-frame-jp-go-dds"`.
+  //   - `+server.ts` recovered from git history
+  //     (`34166ac623dafdc7013013f7a49b9064c06ed8f4^1`) and preserved
+  //     byte-identical (plus a header) at
+  //     `worker/src/xrpc-mcp-router-proxy.ts` — see that file.
+  //
+  // `main` is DELIBERATELY NOT dropped and NOT repointed at the moved
+  // proxy, unlike this workspace's usual "no source calls
+  // env.ASSETS.fetch → drop main" default for a frontend-only migration.
+  // `src/app.ts`/`defence-handlers.ts`/`taxonomy.ts`/`classes-index.ts`
+  // were read and confirmed to contain no `ASSETS` reference — but unlike
+  // a placeholder scaffold, `app.ts` is this repo's actual, independently
+  // live product (confirmed against the README and its own 162 lines of
+  // routing/data logic), and dropping `main` would take that service out
+  // of the deploy path entirely, not just this status page. That would be
+  // a strictly worse regression than leaving the pre-existing gap below
+  // in place, so `main` stays `./src/app.ts` (those four files are also
+  // out of scope for this frontend migration — see the migration task's
+  // "Do NOT touch" list).
+  //
+  // CONSEQUENCE, stated plainly: because `app.ts`'s `fetch` handles every
+  // request itself and never calls `env.ASSETS.fetch(request)`,
+  // `assets.directory` is still not wired to serve anything through this
+  // Worker even after this fix — same as it was, unreachable, when it
+  // pointed at `../web/dist`. That gap predates this migration (it dates
+  // to `34166ac`'s `main` repoint, or arguably to the original
+  // `fc1c239` extraction never wiring `app.ts` at all) and closing it
+  // would require editing `worker/src/app.ts` to fall through to
+  // `env.ASSETS.fetch` for unmatched paths, which is out of scope here.
+  //
+  // This whole edit is UNVERIFIED: `wrangler deploy`/`wrangler dev` were
+  // not run against it.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "etzhayyim-open-cofog",
   "main": "./src/app.ts",
@@ -17,14 +85,14 @@
   "vars": {
     "APP_HANDLE": "open-cofog.etzhayyim.com",
     "PRIMARY_DID": "did:web:open-cofog.etzhayyim.com",
-    "APP_FRAMEWORK": "sveltekit-edge-bff",
+    "APP_FRAMEWORK": "cljs-reagent-re-frame-jp-go-dds",
     "AGENTGATEWAY_MCP_ROUTER_URL": "https://mcp.etzhayyim.com/xrpc/com.etzhayyim.mcp.message"
   },
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "../web/dist",
+    "directory": "./cljs/public",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
