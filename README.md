@@ -15,8 +15,8 @@ Statistics Division's published structure file, a copy of which is committed
 here and pinned by hash:
 
 ```sh
-nbb scripts/cofog-provenance.cljs verify           # offline: hashes, counts, class names
-nbb scripts/cofog-provenance.cljs verify --fetch   # also re-downloads and diffs against the pin
+nbb scripts/cofog-provenance.kotoba verify           # offline: hashes, counts, class names
+nbb scripts/cofog-provenance.kotoba verify --fetch   # also re-downloads and diffs against the pin
 ```
 
 `data/sources.edn` records each source URL with the HTTP status, byte count and

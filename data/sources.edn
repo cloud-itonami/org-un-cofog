@@ -5,8 +5,8 @@
 ;; is committed under :path and pinned by :sha256. Nothing is listed here that
 ;; could not be retrieved — an unfetchable URL is not a citation.
 ;;
-;; Re-check offline:  nbb scripts/cofog-provenance.cljs verify
-;; Re-check upstream: nbb scripts/cofog-provenance.cljs verify --fetch
+;; Re-check offline:  nbb scripts/cofog-provenance.kotoba verify
+;; Re-check upstream: nbb scripts/cofog-provenance.kotoba verify --fetch
 ;;
 ;; :bytes and :sha256 are of the committed copy, which is the response body with
 ;; CRLF newlines normalised to LF. That is the only edit made to it.
@@ -16,7 +16,7 @@
  :data-license   "public-domain"
 
  ;; What this repository asserts about the shape of COFOG. Each number is
- ;; checked against the pinned structure file by scripts/cofog-provenance.cljs;
+ ;; checked against the pinned structure file by scripts/cofog-provenance.kotoba;
  ;; they are not free-standing claims.
  :declared {:division 10 :group 69 :class 109}
 
