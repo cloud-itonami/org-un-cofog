@@ -37,4 +37,4 @@ export const CLASSES: Record<string, CofogClass> = {
 
 export const IMPLEMENTED_COUNT = Object.keys(CLASSES).length;
 export const TOTAL_CLASSES = 109; // UN COFOG 1999 class count, checked against
-// data/upstream/cofog-1999-structure-en.txt by scripts/cofog-provenance.cljs.
+// data/upstream/cofog-1999-structure-en.txt by scripts/cofog-provenance.kotoba.
