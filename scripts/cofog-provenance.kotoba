@@ -1,4 +1,4 @@
-#!/usr/bin/env nbb
+#!/usr/bin/env kbb
 ;; SPDX-License-Identifier: Apache-2.0
 ;; Copyright 2026 etzhayyim Japan株式会社 / etzhayyim. All rights reserved.
 ;; Licensed under the Apache License, Version 2.0 — see LICENSE at repo root.
@@ -7,9 +7,9 @@
 ;; structure by hash, and check that everything this repo asserts about COFOG
 ;; still agrees with it.
 ;;
-;;   nbb scripts/cofog-provenance.cljs verify          offline: hashes, counts, class names
-;;   nbb scripts/cofog-provenance.cljs verify --fetch  also re-downloads and diffs against the pin
-;;   nbb scripts/cofog-provenance.cljs fetch           re-download and print what to record
+;;   kbb --backend sci scripts/cofog-provenance.cljk verify          offline: hashes, counts, class names
+;;   kbb --backend sci scripts/cofog-provenance.cljk verify --fetch  also re-downloads and diffs against the pin
+;;   kbb --backend sci scripts/cofog-provenance.cljk fetch           re-download and print what to record
 ;;
 ;; Exit codes are three-valued on purpose. 0 = checked and clean, 1 = checked and
 ;; a claim is falsified, 2 = COULD NOT CHECK. A run that could not read its own
